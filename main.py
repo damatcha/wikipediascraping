@@ -56,7 +56,7 @@ def process_excel(file_path, region):
     wikipedia.set_lang(region)  
 
     for i in range(0, len(all_names), 10):
-        names_batch = all_names[i:i + 10]  # Process in batches of 10 names
+        names_batch = all_names[i:i + 10]  
         print(f"Processing batch {i // 10 + 1}: Names {i + 1} to {i + len(names_batch)}")
 
         for name in names_batch:
@@ -90,14 +90,14 @@ def main():
     excel_file_path = input("Enter the path to the Excel file: ")
 
     def run_server():
-        print("Starting Flask server on http://127.0.0.1:5000")
-        app.run(host='127.0.0.1', port=5000)
+        print("Starting Flask server on http://127.0.0.1:XXXX")
+        app.run(host='127.0.0.1', port=XXXX)
 
  
     server_thread = threading.Thread(target=run_server)
     server_thread.start()
 
-    webbrowser.open(f'http://127.0.0.1:5000/')
+    webbrowser.open(f'http://127.0.0.1:XXXX/')
 
     input("Press Enter once the processing is done or to exit...")
 
