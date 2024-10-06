@@ -46,6 +46,6 @@ The application includes basic error handling for:
 The results will be saved in an Excel file named `wikipedia_results.xlsx` in the same directory as your script.
 
 ## License
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License.
 
 
